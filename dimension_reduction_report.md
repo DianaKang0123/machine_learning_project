@@ -26,6 +26,10 @@
 - 타겟 데이터 분포 확인
 <img width="431" alt="스크린샷 2024-05-15 172339" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/f4f16249-1214-4865-b568-1a591eafd2a0">
 
+<br>
+<br>
+<br>
+
 ### 2. 연속형 피처 분석
 - Linear Regression 을 통한 학습 결과
 > test = MSE: 0.5563, RMSE: 0.7458, R2: 1.0000
@@ -37,6 +41,10 @@
 
 - R2 점수가 1.0으로 완벽한 예측을 하고 있으나 추가적인 전처리 과정을 통해 수치 조정예정
 
+<br>
+<br>
+<br>
+
 ### 3. 범주형 피쳐 합산 분석
 - 총 4개의 범주형 피처를 라벨인코딩과 함수를 통한 변환을 하여 연속형으로 변경 후 분석 진행
 - Linear Regression 을 통한 학습 결과
@@ -45,6 +53,10 @@
 > val = MSE: 0.3530, RMSE: 0.5941, R2: 1.0000
 
 - 연속형 피쳐만 분석했던 것과 동일하게 R2점수가 1.0으로 나타남
+
+<br>
+<br>
+<br>
 
 ### 4. 이상치 제거
 - standard scaler 를 통하여 총 5,686개의 데이터에서 5,113개로 스케일링을 진행
@@ -55,12 +67,20 @@
 
 - 위와 동일하게 R2점수가 1.0으로 나타남
 
+<br>
+<br>
+<br>
+
 ### 5. 차원 축소
 - 피처의 갯수가 많으므로 차원 축소를 통하여 분석을 진행
 - PCA를 통하여 5개의 차원으로 축소
 - 차원 축소를 통한 보존률 : 0.6107
 - 각 피처 1,2 / 피처 3,4 / 피처 1,5 별 분포 그래프 확인
 <img width="825" alt="스크린샷 2024-05-15 173422" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/1a03a8e2-1015-4071-ba76-90983585c8a7">
+
+<br>
+<br>
+<br>
 
 ### 6. 파이프 라인을 통한 학습
 - standard scaler, PCA, Linear Regression을 통한 학습
@@ -80,6 +100,10 @@
 - 스케일링을 제외하고 학습한 결과 R2점수가 상승
 - 다항 회귀를 통한 학습 후 결과를 보기로 함
 
+<br>
+<br>
+<br>
+
 ### 7. 다항 회귀를 통한 학습
 - Polynomial를 적용한 PCA, Linear Regression을 통한 학습
 >  test = MSE: 274151.0699, RMSE: 523.5944, R2: 0.6822
@@ -87,6 +111,10 @@
 > val = MSE: 306689.6564, RMSE: 553.7957, R2: 0.6642
 
 - 다항 회귀를 통한 학습 시 R2점수가 줄어드는 것을 보아 해당 데이터는 선형 분석이 적합하다고 판단
+
+<br>
+<br>
+<br>
 
 ### 8. 최적의 분석방법 도출
 - PCA, Linear Regression을 통한 분석, 이때 차수를 늘리는 방향으로 시도
@@ -112,7 +140,9 @@
 
 <img width="563" alt="val" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/e2941977-f8a7-49a8-a63f-3e7b304af178">
 
-
+<br>
+<br>
+<br>
 
 ### 9. 학습 성능 시각화
 - train
@@ -123,6 +153,10 @@
 
 - validation
 <img width="449" alt="validation" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/f929dc76-866f-4021-bc97-b48eaa37edbe">
+
+<br>
+<br>
+<br>
 
 ### 10. 결론
 
