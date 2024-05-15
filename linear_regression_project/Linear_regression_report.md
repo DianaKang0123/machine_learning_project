@@ -3,7 +3,7 @@
 ![image](https://github.com/DianaKang0123/machine_learning_project/assets/156397873/70ada97d-c9e0-4561-bc0f-c69a498d93c4)
 
 - Features: 89
-- target : Value
+- target : Value (선수의 금전적 가치)
 
 ---
 
@@ -28,6 +28,7 @@
 - 학습과 연관없는 'ID','Photo', 'Flag','Club Logo' 칼럼 제거
 - weight, height, value, wage, release clause 항목 단위 제거 후 연속형으로 변환
 
+
 <br>
 <br>
 <br>
@@ -49,6 +50,8 @@
 >
 > validation : MSE: 61354177368.7408, RMSE: 247697.7541, R2: 0.8025
 
+<img width="500" alt="스크린샷 2024-05-15 220653" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/2ac678b4-e428-4631-b869-97d5bc81cefd">
+
 - OLS를 통한 다중 공선성 제거
 - p-value 가 0.05 이상인 'Preferred Foot' 외 14개 항목 삭제
 - Linear Regression을 통한 분석결과
@@ -64,6 +67,10 @@
 > test : MSE: 57004456233.2967, RMSE: 238756.0601, R2: 0.1378
 >
 > validation : MSE: 54955034148.6600, RMSE: 234424.9009, R2: 0.1413
+
+
+<img width="558" alt="스크린샷 2024-05-15 220825" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/b464fca7-17e6-4abb-b8e1-1a42c2b7bcb7">  
+
 
 - `describe()`를 통해 이상치가 있는 칼럼만 이상치를 제거
 - 'Wage', 'Release Clause' 두개의 피처의 이상치 제거
@@ -83,7 +90,9 @@
 - 전처리 후 피처가 36개 이므로 차원 축소를 통한 학습을 진행
 - PCA를 통하여 2차원으로 차원 축소
 - 보존률 : 0.9999
-- 시각화 사진
+
+<img width="490" alt="스크린샷 2024-05-15 220858" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/9a6fb94f-f45b-4227-80d1-63487c177e98">
+
 
 <br>
 <br>
@@ -114,10 +123,44 @@
 
 ### 9. 최적의 분석방법 도출
 - test
+
+<img width="278" alt="test_mode" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/fad72346-2af2-4443-a591-8cf1616b24ce">
+
+<img width="560" alt="test_visual" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/338fc4bd-179c-4710-8275-31bd07ef7463">
+
+
 - validation
 
+<img width="275" alt="val_mode" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/cb245765-a685-4dca-9a76-cd6f25281461">
+
+<img width="560" alt="val_visual" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/498c06a7-fea2-4144-b5af-d2cea7ef62da">
+
 - 2차수로 차원 축소를 통한 선형 회귀 학습이 가장 효과적이므로 해당 방식을 채택
+
+### 9-2 pytorch를 통한 과적합 방지
+
+- 2차원 차원 축소를 통한 선형회귀 학습의 loss function 그래프
+
+<img width="460" alt="스크린샷 2024-05-15 220918" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/1a8cbb83-f93e-46f5-999f-20291bb45402">
+
+- 과적합이 없다고 판단되어 성능을 검증
   
 ### 10. 성능 검증
 
+- train
+
+<img width="466" alt="train" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/96eb83b5-946e-4469-8a6b-019f7ccd209f">
+
+- test
+  
+<img width="440" alt="test" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/42544251-d126-4305-a83f-fc66405683b5">
+
+- validation
+
+<img width="454" alt="val" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/56478ad6-8c9f-46e5-9f9d-8d246167d5c5">
+
 ### 11. 결론
+
+<img width="263" alt="result" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/4aebb75f-9cce-4967-a706-8150fd7d4fa6">  
+
+<img width="560" alt="result_visual" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/217b4309-ebc0-4822-bfdd-6dcb5a3c5295">
