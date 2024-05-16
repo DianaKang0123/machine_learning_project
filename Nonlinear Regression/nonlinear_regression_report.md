@@ -52,17 +52,17 @@
 ### 3. 다항 회귀, Tree를 통한 비선형 회귀 분석 (적정모델 선정)
 - Polynomial feature을 통하여 선형 회귀 학습 
 
-> test : MSE: 6295554347490.7139, RMSE: 2509094.3281, R2: 0.7489
+> test : MSE: 6295554347490.7139, RMSE: 2509094.3281, **R2: 0.7489**
 >
-> validation : MSE: 9535269733684.9258, RMSE: 3087923.2072, R2: 0.6161
+> validation : MSE: 9535269733684.9258, RMSE: 3087923.2072, **R2: 0.6161**
 
 - 다항 회귀 분석 시 R2점수가 소폭 상승
 - 다양한 모델을 통하여 비선형 회귀 학습 진행
-> DecisionTreeRegressor => R2: 0.5554
-> RandomForestRegressor => R2: 0.7455
-> GradientBoostingRegressor => R2: 0.7142
-> XGBRegressor => R2: 0.6690
-> LGBMRegressor => R2: 0.7289
+> DecisionTreeRegressor => **R2: 0.5554**
+> RandomForestRegressor => **R2: 0.7455**
+> GradientBoostingRegressor => **R2: 0.7142**
+> XGBRegressor => **R2: 0.6690**
+> LGBMRegressor => **R2: 0.7289**
 - Random Forest Regressor이 가장 높은 R2점수를 보임
 
 <br>
@@ -74,17 +74,17 @@
 - 외 범주 항목은 라벨인코더를 통한 인코딩 진행
 
 - 다양한 모델을 통하여 비선형 회귀 학습 진행
-> DecisionTreeRegressor => R2: 0.5874
-> RandomForestRegressor => R2: 0.7721
-> GradientBoostingRegressor => R2: 0.7184
-> XGBRegressor => R2: 0.7317
-> LGBMRegressor => R2: 0.7548
+> DecisionTreeRegressor => **R2: 0.5874**
+> RandomForestRegressor => **R2: 0.7721**
+> GradientBoostingRegressor => **R2: 0.7184**
+> XGBRegressor => **R2: 0.7317**
+> LGBMRegressor => **R2: 0.7548**
 
 - 전체 모델의 R2 점수가 소폭 상승, Random Forest Regressor가 여전히 가장 높은 점수를 보임
 - 따라서 해당 모델을 채택하여 학습을 진행한 결과
-> test : MSE: 6144498918054.2695, RMSE: 2478809.9802, R2: 0.7721
+> test : MSE: 6144498918054.2695, RMSE: 2478809.9802, **R2: 0.7721**
 >
-> validation : MSE: 4795831010683.0967, RMSE: 2189938.5861, R2: 0.8320
+> validation : MSE: 4795831010683.0967, RMSE: 2189938.5861, **R2: 0.8320**
 
 <br>
 <br>
@@ -97,9 +97,9 @@
 <img width="555" alt="스크린샷 2024-05-15 224024" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/c541fc71-4f61-433a-ad1d-8932e338dd3e">
 
 - 분포 조정 후 Random Forest Regressor 학습 결과
-> test : MSE: 0.0451, RMSE: 0.2125, R2: 0.9326
+> test : MSE: 0.0451, RMSE: 0.2125, **R2: 0.9326**
 >
-> validation : MSE: 0.0447, RMSE: 0.2115, R2: 0.9337
+> validation : MSE: 0.0447, RMSE: 0.2115, **R2: 0.9337**
 
 - 결과가 눈에 띄게 좋아졌으므로, 분포를 조정하여 학습 진행
 
@@ -114,9 +114,9 @@
 <img width="555" alt="std" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/02e85ffe-57a5-40cb-a1cd-8b443027dc7a">
 
 - Random Forest Regressor 학습 결과
-> test : MSE: 0.0378, RMSE: 0.1944, R2: 0.9221
+> test : MSE: 0.0378, RMSE: 0.1944, **R2: 0.9221**
 >
-> validation : MSE: 0.0380, RMSE: 0.1950, R2: 0.9205
+> validation : MSE: 0.0380, RMSE: 0.1950, **R2: 0.9205**
 
 - R2 점수는 이상치 제거 전보다 낮아졌지만, 여전히 높은 점수를 보이므로 신뢰도가 더 높은 이상치 제거 상태를 유지하고 학습 진행
 
@@ -132,9 +132,9 @@
 <img width="370" alt="스크린샷 2024-05-15 224144" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/b62f7de0-a810-40e8-9cdf-c70ccb9b4100">
 
 -  파이프 라인을 통하여 차원 축소 및 Random Forest Regressor 학습
-> test : MSE: 0.6966, RMSE: 0.8346, R2: -0.0408
+> test : MSE: 0.6966, RMSE: 0.8346, **R2: -0.0408**
 >
-> validation : MSE: 0.7021, RMSE: 0.8379, R2: -0.0417
+> validation : MSE: 0.7021, RMSE: 0.8379, **R2: -0.0417**
 
 - 차원을 축소한 결과 보존율이 높음에도 불구하고 R2점수가 마이너스를 띄므로 차원을 축소하지 않는 모델을 채택한다.
 
