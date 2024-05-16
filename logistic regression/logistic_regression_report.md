@@ -1,9 +1,13 @@
 ## 명일 강수여부 예측 (이진분류)
 
-- features
-- targets
+![image](https://github.com/DianaKang0123/machine_learning_project/assets/156397873/a7bb36bf-9d69-4c1c-9572-2a5584eabced)
+
+
+- features : 23 
+- targets : 'Rain Tomorrow'
 
 ---
+
 ### 🤓 목차
 1. 데이터 전처리
 2. 연속형 피처 분석
@@ -27,6 +31,10 @@
 - 비율이 10% 이상인 경우 중앙값으로 대체
 - 비율이 10% 미만의 경우 `dropna`로 처리
 
+<br>
+<br>
+<br>
+
 ### 2. 연속형 피처 분석
 - 데이터 프레임에서 연속형 피처만 추출하여 학습 진행
 - Logistic Regression
@@ -39,6 +47,10 @@
 
 <img width="567" alt="num_val" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/420860e4-ff52-41b0-b6a0-aa47e94cbd03">
 
+<br>
+<br>
+<br>
+
 ### 3. 범주형 피처 합산 분석
 - 범주형 피처의 라벨 인코딩
 - Logistic Regression
@@ -50,6 +62,10 @@
 - validation
 
 <img width="557" alt="0bj_test" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/e53e7060-24ba-4834-9c97-375eabbca72c">
+
+<br>
+<br>
+<br>
 
 ### 4. 타겟 분포 조정
 - 타겟 분포의 불균형이 원인이라고 파악
@@ -67,6 +83,10 @@
 - validation
 
 <img width="565" alt="under_val" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/6d3caa7f-5d35-497e-ae6d-85abe3dff394">
+
+<br>
+<br>
+<br>
 
 ### 5. 다중 공선성 제거
 - OLS 수치 확인, VIF 수치 확인 후 다중 공선성 제거
@@ -88,10 +108,18 @@
 
 <img width="559" alt="cln_val" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/5a8f682b-6ed5-4c05-b64c-1937c1338210">
 
+<br>
+<br>
+<br>
+
 ### 6. 차원 축소
 - LDA를 통한 차원 축소 후 학습 진행
 - 이중 분류이므로 차원은 1차수로 축소
 - 보존율 : 1.0
+
+<br>
+<br>
+<br>
 
 ### 7. 각 모델 별 점수 확인
 - 차원 축소의 보존율이 높으므로, 차원 축소와 각 모델의 파이프라인 구축 후 학습
@@ -135,6 +163,10 @@
 
 <img width="557" alt="lrt" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/8e0d4358-bd2f-4616-b4d7-b68acc01e33c">
 
+<br>
+<br>
+<br>
+
 ### 8. 최적의 모델 찾기
 - 전체 모델 학습 결과 Logistic Regression이 근소하지만 전반적으로 높은 수치를 보임
 - test
@@ -145,10 +177,18 @@
 
 ![다운로드 (1)](https://github.com/DianaKang0123/machine_learning_project/assets/156397873/72a1ff90-9485-450c-9609-742b68ddc69f)
 
+<br>
+<br>
+<br>
+
 ### 9. 교차검증
 - 해당 모델의 과적합을 확인하기 위해 K-Fold를 통하여 교차검증
 - 교차 검증: 0.7854
 - 실제 예측 정확도: 0.7887
+
+<br>
+<br>
+<br>
 
 ### 10. 결론
 - 임계치 확인을 위하연 시각화를 진행, 약 0.5에서 정확도와 재현율이 교차하는 것을 확인
