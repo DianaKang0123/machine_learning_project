@@ -129,7 +129,7 @@
 
 <img width="556" alt="xgbt" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/a9c26c29-b364-4d3f-968d-7a89fffc31e8">
 
--Light GBM Classifier
+- Light GBM Classifier
 
 <img width="557" alt="lgbmt" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/1193cb83-f9a8-4b45-a321-432ea2b04fd8">
 
