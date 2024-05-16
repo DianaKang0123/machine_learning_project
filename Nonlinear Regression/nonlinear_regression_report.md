@@ -39,9 +39,9 @@
 <img width="557" alt="스크린샷 2024-05-15 223917" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/15c22c7f-5f97-414d-9e88-b55a4cb9676c">
 
 - Linear Regression을 통한 학습
-> test : MSE: 14646732672425.7812, RMSE: 3827104.9989, R2: 0.4568
+> test : MSE: 14646732672425.7812, RMSE: 3827104.9989, **R2: 0.4568**
 >
-> validation : MSE: 15715581258704.0664, RMSE: 3964288.2411, R2: 0.4496
+> validation : MSE: 15715581258704.0664, RMSE: 3964288.2411, **R2: 0.4496**
 
 - 선형 회귀에 대하여 낮은 R2 점수를 보이므로 다항 회귀 진행
 
