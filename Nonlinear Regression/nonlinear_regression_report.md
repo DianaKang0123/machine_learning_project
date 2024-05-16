@@ -1,4 +1,4 @@
-## 파키스탄 중고차 가격 예측
+## 🚗 파키스탄 중고차 가격 예측
 ![image](https://github.com/DianaKang0123/machine_learning_project/assets/156397873/f9a5a149-4229-4248-a84d-9f46996441dd)
 
 - features: 14
