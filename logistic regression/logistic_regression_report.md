@@ -1,6 +1,6 @@
 ## 명일 강수여부 예측 (이진분류)
 
-![image](https://github.com/DianaKang0123/machine_learning_project/assets/156397873/a7bb36bf-9d69-4c1c-9572-2a5584eabced)
+![image](https://github.com/DianaKang0123/machine_learning_project/assets/156397873/e20c5d4c-d7fc-4c0e-b647-bc3050c5c709)
 
 
 - features : 23 
