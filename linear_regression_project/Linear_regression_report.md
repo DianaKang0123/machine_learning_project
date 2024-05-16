@@ -42,6 +42,10 @@
 - 특별한 전처리 없이 0.8정도의 R2점수를 보임
 - 범주형 피처를 합산하여 분석한 후 결과확인
 
+<br>
+<br>
+<br>
+
 ### 3. 범주형 피쳐 합산 분석
 - 범주형 데이터 중 'Body Type', 'Work Rate' 는 함수를 통하여 인코딩
 - 'Preferred Foot', 'Position'은 라벨 인코딩을 통하여 인코딩
@@ -60,6 +64,10 @@
 > validation : MSE: 61479017844.9167, RMSE: 247949.6276, R2: 0.8021
 
 - 다중 공선성 제거 전과 근소한 차이를 보임
+
+<br>
+<br>
+<br>
   
 ### 4. 이상치 제거
 - standard scaler를 통하여 16,166개의 데이터를 9,832개로 조정
@@ -113,6 +121,10 @@
 
 - standard scaler 를 적용한 결과 R2 점수가 확연하게 감소
 
+<br>
+<br>
+<br>
+
 ### 8. 다항 회귀 분석
 - Polynomial features를 적용하여 PCA, Linear Regression 학습
 > test : MSE: 100807449242.0323, RMSE: 317501.8886, R2: 0.6114
@@ -120,6 +132,10 @@
 > validation : MSE: 105423802684.5129, RMSE: 324690.3181, R2: 0.6607
 
 - 다항 회귀를 통한 학습을 실행한 결과 R2 점수가 감소
+
+<br>
+<br>
+<br>
 
 ### 9. 최적의 분석방법 도출
 - test
@@ -137,6 +153,10 @@
 
 - 2차수로 차원 축소를 통한 선형 회귀 학습이 가장 효과적이므로 해당 방식을 채택
 
+<br>
+<br>
+<br>
+
 ### 9-2 pytorch를 통한 과적합 방지
 
 - 2차원 차원 축소를 통한 선형회귀 학습의 loss function 그래프
@@ -144,7 +164,11 @@
 <img width="460" alt="스크린샷 2024-05-15 220918" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/1a8cbb83-f93e-46f5-999f-20291bb45402">
 
 - 과적합이 없다고 판단되어 성능을 검증
-  
+
+<br>
+<br>
+<br>
+
 ### 10. 성능 검증
 
 - train
@@ -158,6 +182,10 @@
 - validation
 
 <img width="454" alt="val" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/56478ad6-8c9f-46e5-9f9d-8d246167d5c5">
+
+<br>
+<br>
+<br>
 
 ### 11. 결론
 
