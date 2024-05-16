@@ -13,13 +13,11 @@
 2. 연속형 피처 분석
 3. 범주형 피처 합산 분석
 4. 타겟 분포 조정
-5. 다중 공선성 제거
-6. 차원 축소
-7. 각 모델 별 점수 확인
-8. 최적의 모델 찾기
-9. 교차검증
-10. 임계치 확인, ROC CURVE 확인
-11. 결론
+5. 차원 축소
+6. 각 모델 별 점수 확인
+7. 최적의 모델 찾기
+8. 교차검증
+9. 결론
 
 ---
 
@@ -88,31 +86,7 @@
 <br>
 <br>
 
-### 5. 다중 공선성 제거
-- OLS 수치 확인, VIF 수치 확인 후 다중 공선성 제거
-- 총 6개의 피처 삭제
-> MinTemp   
-> MaxTemp   
-> Rainfall  
-> Cloud9am  
-> Temp3pm
-> Pressure3pm
-
-- Logistic Regression을 통한 학습
-- 이때 `solver = 'liblinear', L2 패널티, C = 1`
-- test
-  
-<img width="560" alt="cln_test" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/be5a1faa-6a42-4f90-a18a-7c06a2fdf96e">
-
-- validation
-
-<img width="559" alt="cln_val" src="https://github.com/DianaKang0123/machine_learning_project/assets/156397873/5a8f682b-6ed5-4c05-b64c-1937c1338210">
-
-<br>
-<br>
-<br>
-
-### 6. 차원 축소
+### 5. 차원 축소
 - LDA를 통한 차원 축소 후 학습 진행
 - 이중 분류이므로 차원은 1차수로 축소
 - 보존율 : 1.0
@@ -121,7 +95,7 @@
 <br>
 <br>
 
-### 7. 각 모델 별 점수 확인
+### 6. 각 모델 별 점수 확인
 - 차원 축소의 보존율이 높으므로, 차원 축소와 각 모델의 파이프라인 구축 후 학습
 - RandomForest Classifier
 
@@ -167,7 +141,7 @@
 <br>
 <br>
 
-### 8. 최적의 모델 찾기
+### 7. 최적의 모델 찾기
 - 전체 모델 학습 결과 Logistic Regression이 근소하지만 전반적으로 높은 수치를 보임
 - test
 
@@ -181,7 +155,7 @@
 <br>
 <br>
 
-### 9. 교차검증
+### 8. 교차검증
 - 해당 모델의 과적합을 확인하기 위해 K-Fold를 통하여 교차검증
 - 교차 검증: 0.7854
 - 실제 예측 정확도: 0.7887
@@ -190,7 +164,7 @@
 <br>
 <br>
 
-### 10. 결론
+### 9. 결론
 - 임계치 확인을 위하연 시각화를 진행, 약 0.5에서 정확도와 재현율이 교차하는 것을 확인
 - 해당 모델은 정밀도와 재현율 모두 중요하므로 임계치를 따로 조정하지 않음
 
